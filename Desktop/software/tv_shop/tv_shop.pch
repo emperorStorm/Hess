@@ -1,0 +1,42 @@
+//
+//  tv_shop.pch
+//  tv_shop
+//
+//  Created by mac on 15/10/14.
+//  Copyright (c) 2015年 peraytech. All rights reserved.
+//
+
+#ifndef tv_shop_tv_shop_pch
+#define tv_shop_tv_shop_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "MyColor.h"
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+#import "AppDelegate.h"
+#import "MyXMLParser.h"
+#import "MyAlertHelper.h"
+#import "LocalUser.h"
+#import "UMSocial.h"
+//#define NSLog
+
+//#define SERVER_URL @"http://222.247.55.153"
+#define SERVER_URL @"http://60.190.202.135"
+
+#define UMKEY @"563c172767e58e69cd0022c3"
+
+
+#endif
+
+#ifndef TARGET_OS_IOS
+
+#define TARGET_OS_IOS TARGET_OS_IPHONE
+
+#endif
+
+#ifndef TARGET_OS_WATCH
+
+#define TARGET_OS_WATCH 0
+
+#endif

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LookVideoExitView">
+            <connections>
+                <outlet property="attHomePage" destination="VnU-fA-c5Z" id="e9S-f4-zXA"/>
+                <outlet property="attention" destination="jJy-RG-DED" id="NCR-iC-k4Q"/>
+                <outlet property="homePage" destination="Pqr-oA-E7u" id="jWJ-rt-HHo"/>
+                <outlet property="name" destination="OpE-Y4-QC7" id="uvA-AU-KkH"/>
+                <outlet property="view" destination="iN0-l3-epB" id="pln-UT-sVv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BufferBackgroundPage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="R7M-EQ-Tw7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="传入主播名字" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OpE-Y4-QC7">
+                    <rect key="frame" x="62" y="314" width="250" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="OpE-Y4-QC7" secondAttribute="height" multiplier="25:4" id="UOe-sR-mBa"/>
+                        <constraint firstAttribute="height" constant="40" id="ogb-xZ-Ibl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqr-oA-E7u">
+                    <rect key="frame" x="212" y="394" width="100" height="40"/>
+                    <state key="normal" title="首页">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="homePage:" destination="-1" eventType="touchUpInside" id="33j-TQ-Nhe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VnU-fA-c5Z">
+                    <rect key="frame" x="137" y="394" width="100" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="jCM-3s-P4f"/>
+                        <constraint firstAttribute="width" secondItem="VnU-fA-c5Z" secondAttribute="height" multiplier="5:2" id="ngz-xp-LnY"/>
+                    </constraints>
+                    <state key="normal" title="首页">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="homePage:" destination="-1" eventType="touchUpInside" id="EBd-XX-z7R"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJy-RG-DED">
+                    <rect key="frame" x="62" y="394" width="100" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="关注">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="attention:" destination="-1" eventType="touchUpInside" id="Aaj-pk-20G"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="R7M-EQ-Tw7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5sp-B4-6UN"/>
+                <constraint firstAttribute="centerY" secondItem="OpE-Y4-QC7" secondAttribute="centerY" id="B65-N4-Qze"/>
+                <constraint firstAttribute="centerX" secondItem="VnU-fA-c5Z" secondAttribute="centerX" id="GR7-0q-5jM"/>
+                <constraint firstAttribute="bottom" secondItem="R7M-EQ-Tw7" secondAttribute="bottom" id="LvT-Qq-EOz"/>
+                <constraint firstItem="VnU-fA-c5Z" firstAttribute="top" secondItem="OpE-Y4-QC7" secondAttribute="bottom" constant="40" id="PTE-qF-nzh"/>
+                <constraint firstAttribute="trailing" secondItem="R7M-EQ-Tw7" secondAttribute="trailing" id="Uyt-AW-3pr"/>
+                <constraint firstAttribute="centerX" secondItem="OpE-Y4-QC7" secondAttribute="centerX" id="iSz-6e-AKP"/>
+                <constraint firstItem="R7M-EQ-Tw7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="um6-1o-vE0"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BufferBackgroundPage.jpg" width="1242" height="2208"/>
+    </resources>
+</document>

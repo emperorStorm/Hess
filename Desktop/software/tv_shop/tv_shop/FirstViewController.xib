@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController">
+            <connections>
+                <outlet property="segController" destination="eYo-HM-g1y" id="qNk-yW-7nx"/>
+                <outlet property="tableView" destination="Qnn-yy-QjN" id="Etz-1H-NfM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9x-sL-0gV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eYo-HM-g1y">
+                            <rect key="frame" x="126" y="26" width="123" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="123" id="onz-8J-zWO"/>
+                            </constraints>
+                            <segments>
+                                <segment title="直播"/>
+                                <segment title="热门"/>
+                            </segments>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="selectSegTab:" destination="-1" eventType="valueChanged" id="ee5-8E-LtY"/>
+                            </connections>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20392156862745098" green="0.2196078431372549" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="eYo-HM-g1y" secondAttribute="centerX" id="2Cd-WT-yB2"/>
+                        <constraint firstAttribute="bottom" secondItem="eYo-HM-g1y" secondAttribute="bottom" constant="11" id="62h-0r-uxM"/>
+                        <constraint firstAttribute="height" constant="65" id="Sb3-iM-Eho"/>
+                        <constraint firstItem="eYo-HM-g1y" firstAttribute="top" secondItem="h9x-sL-0gV" secondAttribute="top" constant="26" id="rgB-PY-z6h"/>
+                    </constraints>
+                </view>
+                <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zde-ez-abY">
+                    <rect key="frame" x="0.0" y="65" width="375" height="190"/>
+                    <subviews>
+                        <pageControl hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="rug-z8-osE">
+                            <rect key="frame" x="153" y="158" width="69" height="37"/>
+                            <color key="pageIndicatorTintColor" red="0.50588235294117645" green="0.51372549019607838" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="currentPageIndicatorTintColor" red="0.96862745098039216" green="0.35686274509803922" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </pageControl>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="190" id="dCS-6Z-KOz"/>
+                    </constraints>
+                </scrollView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Qnn-yy-QjN">
+                    <rect key="frame" x="0.0" y="65" width="375" height="553"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zde-ez-abY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DdO-IA-be9"/>
+                <constraint firstAttribute="trailing" secondItem="Qnn-yy-QjN" secondAttribute="trailing" id="Dww-p9-i0P"/>
+                <constraint firstItem="Qnn-yy-QjN" firstAttribute="top" secondItem="h9x-sL-0gV" secondAttribute="bottom" id="GPZ-sq-MFJ"/>
+                <constraint firstAttribute="trailing" secondItem="zde-ez-abY" secondAttribute="trailing" id="Htp-BV-4nl"/>
+                <constraint firstItem="zde-ez-abY" firstAttribute="top" secondItem="h9x-sL-0gV" secondAttribute="bottom" id="IXF-go-hoB"/>
+                <constraint firstAttribute="trailing" secondItem="h9x-sL-0gV" secondAttribute="trailing" id="QUo-4n-i2q"/>
+                <constraint firstItem="Qnn-yy-QjN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nUX-5U-lBz"/>
+                <constraint firstAttribute="bottom" secondItem="Qnn-yy-QjN" secondAttribute="bottom" constant="49" id="rnk-w8-eWb"/>
+                <constraint firstItem="h9x-sL-0gV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="t9C-k4-gPN"/>
+                <constraint firstItem="h9x-sL-0gV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vHB-yl-CCL"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="265.5" y="256.5"/>
+        </view>
+    </objects>
+</document>

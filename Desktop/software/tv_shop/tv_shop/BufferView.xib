@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bCe-HJ-fiz" customClass="BufferView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BufferBackgroundPage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="J3c-hN-9Ke">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bHs-TS-3o2">
+                    <rect key="frame" x="240" y="167" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="EaE-on-Ntl"/>
+                        <constraint firstAttribute="width" constant="120" id="nbe-3s-YpP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8c-Er-fXb">
+                    <rect key="frame" x="175" y="297" width="250" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="YK5-Ow-ccw"/>
+                        <constraint firstAttribute="height" constant="50" id="fHx-vl-B58"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="J3c-hN-9Ke" firstAttribute="top" secondItem="bCe-HJ-fiz" secondAttribute="top" id="D8w-XG-Jbi"/>
+                <constraint firstAttribute="trailing" secondItem="J3c-hN-9Ke" secondAttribute="trailing" id="Fie-t7-q8f"/>
+                <constraint firstAttribute="centerY" secondItem="x8c-Er-fXb" secondAttribute="centerY" constant="-21.5" id="Gy6-z2-3F8"/>
+                <constraint firstAttribute="centerX" secondItem="bHs-TS-3o2" secondAttribute="centerX" id="K8E-83-YXU"/>
+                <constraint firstAttribute="centerY" secondItem="bHs-TS-3o2" secondAttribute="centerY" constant="73.5" id="O7Z-s7-g1n"/>
+                <constraint firstItem="J3c-hN-9Ke" firstAttribute="leading" secondItem="bCe-HJ-fiz" secondAttribute="leading" id="Urn-ns-a45"/>
+                <constraint firstAttribute="bottom" secondItem="J3c-hN-9Ke" secondAttribute="bottom" id="r0t-hs-jfw"/>
+                <constraint firstAttribute="centerX" secondItem="x8c-Er-fXb" secondAttribute="centerX" id="z9z-U8-sC3"/>
+            </constraints>
+            <connections>
+                <outlet property="image" destination="bHs-TS-3o2" id="t4k-wy-Mya"/>
+                <outlet property="imageHeight" destination="EaE-on-Ntl" id="UW5-ie-VaG"/>
+                <outlet property="imageWidth" destination="nbe-3s-YpP" id="hHJ-St-q9F"/>
+                <outlet property="lable" destination="x8c-Er-fXb" id="AWC-P0-VW4"/>
+            </connections>
+            <point key="canvasLocation" x="1" y="216"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BufferBackgroundPage.jpg" width="1242" height="2208"/>
+    </resources>
+</document>
